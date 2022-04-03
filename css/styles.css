@@ -1,0 +1,155 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+
+  color: #212121;
+  background: #ffffff;
+}
+
+/* MENU STRONY*/
+
+.menu-logo-webstudio {
+  font-size: 26px;
+  line-height: 75%;
+  color: #212121;
+}
+.menu-section-links-a,
+.menu-social-links-a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 146%;
+}
+.menu-social-links-a {
+  color: #757575;
+}
+.menu-section-links-a {
+  color: #212121;
+}
+
+.menu-logo-webstudio:hover,
+.menu-section-links-a:hover,
+.menu-social-links-a:hover {
+  color: #2196f3;
+}
+
+.button {
+  cursor: pointer;
+  color: #212121;
+}
+
+.button:hover {
+  color: white;
+  background-color: #2196f3;
+}
+/* MAIN NAGŁOWEK STRONY */
+
+.title-section {
+  background: #2f303a;
+}
+.main-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 136%;
+  color: white;
+}
+.main-button-text {
+  font-size: 16px;
+  line-height: 188%;
+}
+
+/*SEKCJA   NASZE ATUTY */
+
+.our-strengths-title {
+  font-size: 36px;
+  line-height: 162%;
+}
+.our-strengths-box-title,
+.our-strengths-box-text {
+  font-size: 14px;
+}
+
+.our-strengths-box-title {
+  line-height: 171%;
+}
+
+.our-strengths-box-text {
+  line-height: 171%;
+  color: #757575;
+}
+
+/* SEKCJA   NASZ ZESPÓŁ */
+
+.our-team-section {
+  background: #f5f4fa;
+}
+.our-team-title {
+  font-size: 36px;
+  line-height: 272%;
+}
+.our-team-box-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 368%;
+}
+.our-team-box-text {
+  font-size: 14px;
+  line-height: 368%;
+  color: #757575;
+}
+
+/* FOOTER   LINKI KONTAKTOWE */
+
+.footer-section {
+  background: #2f303a;
+}
+
+.footer-logo-webstudio {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 26px;
+  line-height: 252%;
+  color: #2196f3;
+}
+.footer-social-links-a,
+.footer-addres {
+  font-size: 14px;
+  line-height: 171%;
+}
+.footer-addres {
+  color: #ffffff;
+}
+
+.footer-social-links-a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-logo-webstudio:hover {
+  color: white;
+}
+
+.footer-addres:hover,
+.footer-social-links-a:hover {
+  color: #2196f3;
+}
+
+/* PORTFOLIO */
+
+.portfolio-button-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  color: #212121;
+}
+.portfolio-button-text:hover {
+  color: white;
+}
+
+.porfolio-box-title {
+  font-size: 18px;
+  line-height: 200%;
+}
+.porfolio-box-text {
+  font-size: 16px;
+  line-height: 188%;
+  color: #757575;
+}
