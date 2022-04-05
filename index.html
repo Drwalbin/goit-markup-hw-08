@@ -10,46 +10,67 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
   </head>
 
   <body>
-    <header>
-      <!--Menu-->
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html" class="menu-logo-webstudio">WebStudio</a>
-          </li>
-          <li><a href="index.html" class="menu-section-links-a">Agencja</a></li>
-          <li>
-            <a href="portfolio.html" class="menu-section-links-a">Portfolio</a>
-          </li>
-          <li><a href="kontakty" class="menu-section-links-a">Kontakt</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com" class="menu-social-links-a"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+48111111111" class="menu-social-links-a"
-            >+48 111 111 111</a
-          >
-        </li>
-      </ul>
-    </header>
-
-    <main>
-      <section class="title-section">
-        <h1 class="main-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="button">Zamów usługe</button>
-      </section>
-
-      <!--Nasze Atuty-->
+    <!----------------------Menu------------------------->
+    <header class="header">
       <section>
-        <ul>
+        <div class="container">
+          <nav class="container">
+            <a href="index.html" class="menu-logo-webstudio"
+              ><span class="logo-text">Web</span>Studio</a
+            >
+
+            <ul class="flex-container-menu">
+              <li>
+                <a href="index.html" class="menu-section-links-a">Agencja</a>
+              </li>
+              <li>
+                <a href="portfolio.html" class="menu-section-links-a"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="kontakty" class="menu-section-links-a">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <ul class="flex-container-menu-contact">
+          <li>
+            <a
+              href="mailto:info@devstudio.com"
+              class="menu-social-links-a menu-email"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+48111111111" class="menu-social-links-a"
+              >+48&#160;111&#160;111&#160;111</a
+            >
+          </li>
+        </ul>
+      </section>
+    </header>
+    <!------------------------------------------------- NAGŁÓWEK -------------------------------------------->
+    <main>
+      <section class="title-section flex-container-title">
+        <h1 class="main-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <button type="button" class="main-button main-button-text">
+          Zamów usługe
+        </button>
+      </section>
+
+      <!--------------------------------------Nasze Atuty------------------------------------------->
+
+      <section>
+        <ul class="our-strengths-text-section">
           <li>
             <h3 class="our-strengths-box-title">LOREM IPSUM</h3>
             <p class="our-strengths-box-text">
@@ -84,11 +105,11 @@
         </ul>
       </section>
 
-      <!--Czym sie zajmujemy-->
+      <!--------------------------------Czym sie zajmujemy----------------------------------->
       <section>
         <h2 class="our-strengths-title">Czym się zajmujemy</h2>
-        <ul>
-          <li>
+        <ul class="our-strengths-photo">
+          <li class="our-strengths-photo-margin">
             <img
               src="images/img1.jpg"
               alt="Pisanie programu"
@@ -96,7 +117,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="our-strengths-photo-margin">
             <img
               src="images/img2.jpg"
               alt="Tworzenie aplikacji komórkowych"
@@ -115,77 +136,84 @@
         </ul>
       </section>
 
-      <!--Nasz Zespół-->
-      <section class="our-team-section">
-        <h2 class="our-team-title">Nasz zespół</h2>
-        <ul>
-          <li>
-            <img
-              src="images/img4.jpg"
-              alt="Pracownik Product Designer"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-team-box-title">John Doe</h3>
-            <p class="our-team-box-text">Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="images/img5.jpg"
-              alt="Pracownik Frontend Developer"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-team-box-title">John Doe</h3>
-            <p class="our-team-box-text">Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="images/img6.jpg"
-              alt="Pracownik Marketing"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-team-box-title">John Doe</h3>
-            <p class="our-team-box-text">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="images/img7.jpg"
-              alt="Pracownik UI Designer"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-team-box-title">John Doe</h3>
-            <p class="our-team-box-text">UI Designer</p>
-          </li>
-        </ul>
+      <!--------------------------------Nasz Zespół----------------------------------->
+
+      <section>
+        <div class="our-team-section">
+          <h2 class="our-team-title">Nasz zespół</h2>
+
+          <ul class="our-team-profiles">
+            <li class="our-team-profile-box">
+              <img
+                src="images/img4.jpg"
+                alt="Pracownik Product Designer"
+                width="270"
+                height="260"
+              />
+              <h3 class="our-team-box-title">John Doe</h3>
+              <p class="our-team-box-text">Product Designer</p>
+            </li>
+            <li class="our-team-profile-box">
+              <img
+                src="images/img5.jpg"
+                alt="Pracownik Frontend Developer"
+                width="270"
+                height="260"
+              />
+              <h3 class="our-team-box-title">John Doe</h3>
+              <p class="our-team-box-text">Frontend Developer</p>
+            </li>
+            <li class="our-team-profile-box">
+              <img
+                src="images/img6.jpg"
+                alt="Pracownik Marketing"
+                width="270"
+                height="260"
+              />
+              <h3 class="our-team-box-title">John Doe</h3>
+              <p class="our-team-box-text">Marketing</p>
+            </li>
+            <li class="our-team-profile-box">
+              <img
+                src="images/img7.jpg"
+                alt="Pracownik UI Designer"
+                width="270"
+                height="260"
+              />
+              <h3 class="our-team-box-title">John Doe</h3>
+              <p class="our-team-box-text">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-
-    <footer class="footer-section">
-      <address>
-        <ul>
-          <li>
-            <a href="/index.html" class="footer-logo-webstudio">WebStudio</a>
-          </li>
-          <li>
-            <a href="m.Warszawa,AlejeJerozolimskie21" class="footer-addres"
-              >m. Warszawa, Aleje Jerozolimskie 21</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@example.com" class="footer-social-links-a"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+48111111111" class="footer-social-links-a"
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
-      </address>
-    </footer>
+    <!---------------------------------------- FOOTER ----------------------------------------->
+    <section>
+      <footer class="footer-section">
+        <address>
+          <a href="/index.html" class="footer-logo-webstudio"
+            ><span class="logo-text">Web</span>Studio</a
+          >
+          <ul class="address-section">
+            <li></li>
+            <li>
+              <a href="m.Warszawa,AlejeJerozolimskie21" class="footer-addres"
+                >m. Warszawa, Aleje Jerozolimskie 21</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@example.com" class="footer-social-links-a"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+48111111111" class="footer-social-links-a"
+                >+48&#160;111&#160;111&#160;111</a
+              >
+            </li>
+          </ul>
+        </address>
+      </footer>
+    </section>
   </body>
 </html>
