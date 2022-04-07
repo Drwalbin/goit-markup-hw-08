@@ -33,9 +33,12 @@ a {
   text-decoration: none;
 }
 
-.header,
 .container {
   width: 1200px;
+}
+
+.section {
+  padding: 94px 0px 94px 0px;
 }
 
 /* ----------------------------MENU STRONY--------------------------------------*/
@@ -82,8 +85,6 @@ a {
   position: absolute;
   font-family: "Raleway";
 
-  text-decoration: none;
-
   height: 31px;
   left: 215px;
   top: 24px;
@@ -99,7 +100,7 @@ a {
   line-height: 146%;
 }
 .menu-email {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .menu-social-links-a {
@@ -338,17 +339,10 @@ a {
 }
 
 /*------------------------------- PORTFOLIO--------------------------------- */
-.portfolio-filters-section {
-  position: absolute;
-  width: 572px;
-  height: 54px;
-  left: 510px;
-  top: 94px;
-  display: flex;
-}
 
-.portfolio-button,
-.portfolio-button-text {
+.portfolio-button {
+  padding: 6px 22px 6px 22px;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
@@ -356,28 +350,44 @@ a {
   margin-right: 8px;
   border-radius: 4px;
   background: #f5f4fa;
+  border: 0;
 }
 
-.portfolio-button-text:hover {
+.portfolio-button:hover {
   background-color: #2196f3;
   color: white;
 }
 
-.portfolio-box-section {
+.portfolio-item-section {
   position: absolute;
   width: 1170px;
   height: 1360px;
   left: 215px;
   top: 174px;
+}
+.portfolio-filters-section {
+  position: absolute;
+  width: 572px;
+  height: 38px;
+  left: 295px;
+  top: 0px;
 
   display: flex;
+}
 
+.portfolio-box-section {
+  justify-content: space-between;
   flex-wrap: wrap;
+  display: flex;
 }
 .portfolio-box {
-  justify-content: space-between;
+  height: 404px;
+  width: 370px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-bottom: 30px;
 }
-
 .portfolio-box-title {
   font-family: "Roboto";
 
@@ -385,16 +395,16 @@ a {
   font-size: 18px;
   letter-spacing: 0.06em;
   font-size: 18px;
-  line-height: 200%;
+  padding: 20px 24px 2px 24px;
 }
 
 .portfolio-box-text {
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
-  line-height: 188%;
   color: var(--secondary-color);
   letter-spacing: 0.03em;
+  padding: 2px 24px 20px 24px;
 }
 
 .portfolio-footer-section {
