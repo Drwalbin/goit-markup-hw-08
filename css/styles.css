@@ -40,7 +40,7 @@ a {
 .section {
   padding: 94px 0px 94px 0px;
 }
-
+/* Główny kolor */
 /* ----------------------------MENU STRONY--------------------------------------*/
 
 .logo-text {
@@ -83,8 +83,8 @@ a {
 
 .menu-logo-webstudio {
   position: absolute;
-  font-family: "Raleway";
-
+  font-family: var(--secondary-font);
+  font-style: normal;
   height: 31px;
   left: 215px;
   top: 24px;
@@ -305,7 +305,7 @@ a {
   top: 60px;
 
   font-family: var(--secondary-font);
-
+  font-style: normal;
   font-size: 26px;
   line-height: 252%;
   color: white;
@@ -315,6 +315,7 @@ a {
 .footer-addres {
   font-size: 14px;
   line-height: 171%;
+  font-style: normal;
 }
 
 .address-section {
