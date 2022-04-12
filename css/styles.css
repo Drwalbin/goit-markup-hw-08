@@ -39,7 +39,6 @@ a {
 
 .container {
   width: 1200px;
-  margin: 0 auto;
 }
 
 .section {
@@ -48,54 +47,52 @@ a {
 
 /* ----------------------------MENU STRONY--------------------------------------*/
 
+.header {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px 32px 0px;
+}
+
+.menu-section {
+  width: 1600px;
+  margin-left: 215px;
+
+  display: flex;
+}
+
+.line {
+  width: 1600px;
+  left: 0px;
+  border-bottom: 1px solid #ececec;
+}
+.menu-logo-webstudio {
+  width: 145px;
+  height: 31px;
+  margin-right: 93px;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-size: 26px;
+  line-height: 75%;
+  color: var(--main-color);
+  display: flex;
+}
 .logo-text {
   color: var(--brand-color);
 }
 
-.menu-section {
-  height: 80px;
-  justify-content: center;
-}
-
-.line {
-  position: absolute;
-  width: 1600px;
-  height: 0px;
-  left: 0px;
-  top: 80px;
-
-  border: 1px solid #ececec;
-}
 .flex-container-menu {
-  position: absolute;
+  margin-right: 371px;
   width: 254px;
   height: 16px;
-  left: 453px;
-  top: 32px;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 .flex-container-menu-contact {
-  position: absolute;
   width: 135px;
   height: 16px;
-  left: 1078px;
-  top: 32px;
   display: flex;
-  justify-content: space-between;
-}
-
-.menu-logo-webstudio {
-  position: absolute;
-  font-family: var(--secondary-font);
-  font-style: normal;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-  font-size: 26px;
-  line-height: 125%;
-  color: var(--main-color);
 }
 
 .menu-section-links-a,
@@ -122,6 +119,30 @@ a {
   color: var(--brand-color);
 }
 
+/* ---------------------MAIN NAGŁOWEK STRONY ------------------------*/
+
+.title-section {
+  width: 1600px;
+  height: 600px;
+
+  background: var(--secondary-background-color);
+}
+
+.main-title {
+  margin: 0 auto;
+  width: 696px;
+  height: 120px;
+  padding: 200px 452px 0px 452px;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 136%;
+  letter-spacing: 0.06em;
+  color: var(--third-color);
+}
+
 .button,
 .main-button {
   cursor: pointer;
@@ -134,37 +155,16 @@ a {
   background-color: var(--brand-color);
 }
 
-/* ---------------------MAIN NAGŁOWEK STRONY ------------------------*/
-
-.title-section {
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-  background: var(--secondary-background-color);
-}
-
-.main-title {
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 200px;
-
-  text-align: center;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 136%;
-  letter-spacing: 0.06em;
-  color: var(--third-color);
-}
 .main-button {
-  position: absolute;
+  margin: 0 auto;
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+
   border-radius: 4px;
 }
 .main-button-text {
@@ -176,11 +176,10 @@ a {
 /*-------------------SEKCJA   NASZE ATUTY------------------------ */
 
 .our-strengths-section {
-  position: absolute;
   height: 101px;
   width: 1200px;
-  left: 215px;
-  top: 774px;
+
+  padding: 94px 215px;
   display: flex;
   letter-spacing: 0.03em;
 }
@@ -188,7 +187,7 @@ a {
 .our-strengths-box {
   width: 270px;
   height: 101px;
-  top: 774px;
+
   margin-right: 30px;
   letter-spacing: 0.03em;
 }
@@ -199,7 +198,7 @@ a {
 .our-strengths-box-title {
   width: 270px;
   height: 16px;
-  top: 94px;
+
   font-size: 36px;
   line-height: 162%;
 }
@@ -208,13 +207,17 @@ a {
   height: 75px;
   letter-spacing: 0.03em;
 }
+.our-strengths-title-section {
+  width: 1170px;
+  margin-left: 215px;
+}
+
 .our-strengths-title {
-  position: absolute;
   width: 352px;
   height: 42px;
-  left: 624px;
-  top: 969px;
 
+  margin: auto;
+  padding-bottom: 50px;
   font-size: 36px;
   line-height: 162%;
 }
@@ -223,11 +226,10 @@ a {
 }
 
 .our-strengths-photo {
-  position: absolute;
   width: 370px;
   height: 294px;
-  left: 215px;
-  top: 1061px;
+  margin-bottom: 94px;
+
   display: flex;
 }
 
@@ -244,40 +246,35 @@ a {
 /*------------------------ SEKCJA   NASZ ZESPÓŁ------------------------- */
 
 .our-team-section {
-  position: absolute;
+  justify-content: center;
+  align-items: stretch;
   width: 1600px;
   height: 648px;
-  left: 0px;
-  top: 1449px;
 
   background: #f5f4fa;
 }
 
 .our-team-title {
-  position: absolute;
   width: 210px;
   height: 42px;
-  left: 695px;
-  top: 94px;
-
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  padding: 94px 0px 54px 0px;
   font-size: 36px;
   line-height: 121%;
 }
 
 .our-team-profiles {
-  position: absolute;
-  height: 368px;
-  left: 215px;
-  top: 186px;
   display: flex;
+  margin-left: 215px;
 }
 
 .our-team-profile-box {
   width: 270px;
   height: 368px;
-  left: 215px;
-  top: 186px;
   margin-right: 30px;
+
   border-radius: 4px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -307,19 +304,16 @@ a {
 /*-------------------- FOOTER   LINKI KONTAKTOWE -----------------------------*/
 
 .footer-section {
-  position: absolute;
   width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
+
+  padding: 60px 0px 60px 215px;
   background: var(--secondary-background-color);
 }
 
 .footer-logo-webstudio {
-  position: absolute;
+  width: 145px;
   height: 31px;
-  left: 215px;
-  top: 60px;
+
   color: var(--third-color);
   font-family: var(--secondary-font);
   font-style: normal;
@@ -335,10 +329,11 @@ a {
 }
 
 .address-section {
-  position: absolute;
+  width: 300px;
   height: 81px;
-  left: 215px;
-  top: 111px;
+  letter-spacing: 0.03em;
+  display: block;
+  align-content: center;
 }
 
 .footer-addres {
@@ -375,17 +370,14 @@ a {
 }
 
 .portfolio-item-section {
-  position: absolute;
-  height: 1360px;
-  left: 215px;
-  top: 174px;
+  margin-left: 215px;
 }
 .portfolio-filters-section {
-  position: absolute;
   height: 38px;
-  left: 295px;
-  top: 0px;
+  justify-content: center;
+
   display: flex;
+  margin-bottom: 50px;
 }
 
 .portfolio-box-section {
@@ -419,13 +411,4 @@ a {
   color: var(--secondary-color);
   letter-spacing: 0.03em;
   padding: 2px 24px 20px 24px;
-}
-
-.portfolio-footer-section {
-  position: absolute;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 1628px;
-  background: var(--secondary-background-color);
 }
