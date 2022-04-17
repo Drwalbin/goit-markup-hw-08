@@ -189,6 +189,7 @@ a {
     url(images/obraz_tła.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  
 
   background-color: var(--secondary-background-color);
 }
