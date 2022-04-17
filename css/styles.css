@@ -187,6 +187,8 @@ a {
       rgba(47, 48, 58, 0.4)
     ),
     url(/images/obraz_tła.jpg);
+    background-size: cover;
+  background-repeat: no-repeat;
 
   background-color: var(--secondary-background-color);
 }
