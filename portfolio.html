@@ -1,145 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/modern-normalize.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <!----------------------Menu------------------------->
+    <header class="header line">
+      <section>
+        <div class="container">
+          <nav class="menu-section">
+            <a href="index.html" class="menu-logo-webstudio"
+              ><span class="logo-text">Web</span>Studio</a
+            >
 
-<body>
-  <!----------------------Menu------------------------->
-  <header class="header line">
-    <section class="container">
-      <div>
-        <nav class="menu-section">
-          <a href="index.html" class="menu-logo-webstudio"><span class="logo-text">Web</span>Studio</a>
+            <ul class="flex-container-menu">
+              <li>
+                <a href="index.html" class="menu-section-links-a">Agencja</a>
+              </li>
+              <li>
+                <a href="portfolio.html" class="menu-section-links-a"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="kontakty" class="menu-section-links-a">Kontakt</a>
+              </li>
+            </ul>
 
-          <ul class="flex-container-menu">
+            <ul class="flex-container-menu-contact">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="menu-social-links-a menu-email"
+                  ><svg class="contact-icon" width="16" height="12">
+                    <use href="/images/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+48111111111" class="menu-social-links-a"
+                  ><svg class="contact-icon" width="10" height="16">
+                    <use href="/images/sprite.svg#icon-smartphone"></use></svg>+48&#160;111&#160;111&#160;111</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <!------------------------------------------------- NAGŁÓWEK -------------------------------------------->
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <ul class="portfolio-filters-section">
             <li>
-              <a href="index.html" class="menu-section-links-a">Agencja</a>
+              <button type="button" class="portfolio-button">Wszystkie</button>
             </li>
             <li>
-              <a href="portfolio.html" class="menu-section-links-a">Portfolio</a>
+              <button type="button" class="portfolio-button">Strony</button>
             </li>
             <li>
-              <a href="kontakty" class="menu-section-links-a">Kontakt</a>
+              <button type="button" class="portfolio-button">Aplikacje</button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-button">Dizajn</button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-button">Marketing</button>
             </li>
           </ul>
+        </div>
 
-          <ul class="flex-container-menu-contact">
-            <li>
-              <a href="mailto:info@devstudio.com" class="menu-social-links-a menu-email">
-                info@devstudio.com</a>
+        <div class="portfolio-section">
+          <ul class="portfolio-box-section">
+            <li class="portfolio-box">
+              <img
+                src="images/portfolio1.jpg"
+                alt="Laptop z pfofilami pracowników"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-box-title">Technocrack</div>
+              <p class="portfolio-box-text">Strona internetowa</p>
             </li>
-            <li>
-              <a href="tel:+48111111111" class="menu-social-links-a">+48&#160;111&#160;111&#160;111</a>
+            <li class="portfolio-box">
+              <img
+                src="images/portfolio2.jpg"
+                alt="Dwóch koszykarzy walczących o piłkę"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-box-title">
+                Grafika New Orlean vs Golden Star
+              </div>
+              <p class="portfolio-box-text">Dizajn</p>
+            </li>
+            <li class="portfolio-box">
+              <img
+                src="images/portfolio3.jpg"
+                alt="Logo restauracji z rybą w tle"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-box-title">Restauracja Seafood</div>
+              <p class="portfolio-box-text">Aplikacja</p>
+            </li>
+            <li class="portfolio-box">
+              <img
+                src="images/portfolio4.jpg"
+                alt="Słuchawki nauszne bezprzewodowe"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-box-title">Projekt Boxes</div>
+              <p class="portfolio-box-text">Aplikacja</p>
+            </li>
+            <li class="portfolio-box">
+              <img
+                src="images/portfolio5.jpg"
+                alt="Dwa pudełka"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-box-title">Projekt Prime</div>
+              <p class="portfolio-box-text">Marketing</p>
+            </li>
+            <li class="portfolio-box">
+              <img
+                src="images/portfolio6.jpg"
+                alt="Ekran monitora z stroną internetową"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-box-title">Inspiration has no Borders</div>
+              <p class="portfolio-box-text">Strona internetowa</p>
+            </li>
+            <li class="portfolio-box">
+              <img
+                src="images/portfolio7.jpg"
+                alt="Otwarta książka"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-box-title">Magazyn Limited Edition</div>
+              <p class="portfolio-box-text">Dizajn</p>
+            </li>
+            <li class="portfolio-box">
+              <img
+                src="images/portfolio8.jpg"
+                alt="Zawieszka z logiem Label Tag"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-box-title">Projekt LAB</div>
+              <p class="portfolio-box-text">Marketing</p>
+            </li>
+            <li class="portfolio-box">
+              <img
+                src="images/portfolio9.jpg"
+                alt="Otwarty laptop z strono Growing Buisness"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-box-title">Growing Business</div>
+              <p class="portfolio-box-text">Aplikacja</p>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </section>
+    </main>
+    <section class="footer-section">
+      <footer>
+        <div class="container">
+          <ul class="footer-containers">
+            <li>
+              <address>
+                <a href="index.html" class="footer-logo-webstudio"><span class="logo-text">Web</span>Studio</a>
+                <ul class="address-section">
+                  <li>
+                    <a href="m.Warszawa,AlejeJerozolimskie21" class="footer-addres">m. Warszawa, Aleje Jerozolimskie
+                      21</a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@example.com" class="footer-social-links-a">info@example.com</a>
+                  </li>
+                  <li>
+                    <a href="tel:+48111111111" class="footer-social-links-a">+48&#160;111&#160;111&#160;111</a>
+                  </li>
+                </ul>
+              </address>
+            </li>
+            <li>
+
+
+              <p class="footer-joinus-title">DOŁĄCZ DO NAS</p>
+              <ul class="footer-icon social-list">
+              <li>
+                <a class="footer-social-list-link " href="">
+                  <svg width="20px" height="20px">
+                    <use href="/images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-social-list-link" href="">
+                  <svg width="20px" height="20px">
+                    <use href="/images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-social-list-link" href="">
+                  <svg width="20px" height="20px">
+                    <use href="/images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-social-list-link" href="">
+                  <svg width="20px" height="20px">
+                    <use href="/images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+
+
+            </li>
+          </ul>
+        </div>
+      </footer>
     </section>
-  </header>
-  <!------------------------------------------------- NAGŁÓWEK -------------------------------------------->
-
-  <main class="container portfolio-item-section">
-    <section class="section">
-      <div>
-        <ul class="portfolio-filters-section">
-          <li>
-            <button type="button" class="portfolio-button">Wszystkie</button>
-          </li>
-          <li>
-            <button type="button" class="portfolio-button">Strony</button>
-          </li>
-          <li>
-            <button type="button" class="portfolio-button">Aplikacje</button>
-          </li>
-          <li>
-            <button type="button" class="portfolio-button">Dizajn</button>
-          </li>
-          <li>
-            <button type="button" class="portfolio-button">Marketing</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="portfolio-box-section">
-        <ul class="portfolio-box-section">
-          <li class="portfolio-box">
-            <img src="images/portfolio1.jpg" alt="Laptop z pfofilami pracowników" width="370" height="294" />
-            <div class="portfolio-box-title">Technocrack</div>
-            <p class="portfolio-box-text">Strona internetowa</p>
-          </li>
-          <li class="portfolio-box">
-            <img src="images/portfolio2.jpg" alt="Dwóch koszykarzy walczących o piłkę" width="370" height="294" />
-            <div class="portfolio-box-title">
-              Grafika New Orlean vs Golden Star
-            </div>
-            <p class="portfolio-box-text">Dizajn</p>
-          </li>
-          <li class="portfolio-box">
-            <img src="images/portfolio3.jpg" alt="Logo restauracji z rybą w tle" width="370" height="294" />
-            <div class="portfolio-box-title">Restauracja Seafood</div>
-            <p class="portfolio-box-text">Aplikacja</p>
-          </li>
-          <li class="portfolio-box">
-            <img src="images/portfolio4.jpg" alt="Słuchawki nauszne bezprzewodowe" width="370" height="294" />
-            <div class="portfolio-box-title">Projekt Boxes</div>
-            <p class="portfolio-box-text">Aplikacja</p>
-          </li>
-          <li class="portfolio-box">
-            <img src="images/portfolio5.jpg" alt="Dwa pudełka" width="370" height="294" />
-            <div class="portfolio-box-title">Projekt Prime</div>
-            <p class="portfolio-box-text">Marketing</p>
-          </li>
-          <li class="portfolio-box">
-            <img src="images/portfolio6.jpg" alt="Ekran monitora z stroną internetową" width="370" height="294" />
-            <div class="portfolio-box-title">Inspiration has no Borders</div>
-            <p class="portfolio-box-text">Strona internetowa</p>
-          </li>
-          <li class="portfolio-box">
-            <img src="images/portfolio7.jpg" alt="Otwarta książka" width="370" height="294" />
-            <div class="portfolio-box-title">Magazyn Limited Edition</div>
-            <p class="portfolio-box-text">Dizajn</p>
-          </li>
-          <li class="portfolio-box">
-            <img src="images/portfolio8.jpg" alt="Zawieszka z logiem Label Tag" width="370" height="294" />
-            <div class="portfolio-box-title">Projekt LAB</div>
-            <p class="portfolio-box-text">Marketing</p>
-          </li>
-          <li class="portfolio-box">
-            <img src="images/portfolio9.jpg" alt="Otwarty laptop z strono Growing Buisness" width="370" height="294" />
-            <div class="portfolio-box-title">Growing Business</div>
-            <p class="portfolio-box-text">Aplikacja</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <section class="footer-section">
-    <footer class="container">
-      <address>
-        <a href="index.html" class="footer-logo-webstudio"><span class="logo-text">Web</span>Studio</a>
-        <ul class="address-section">
-          <li></li>
-          <li>
-            <a href="m.Warszawa,AlejeJerozolimskie21" class="footer-addres">m. Warszawa, Aleje Jerozolimskie 21</a>
-          </li>
-          <li>
-            <a href="mailto:info@example.com" class="footer-social-links-a">info@example.com</a>
-          </li>
-          <li>
-            <a href="tel:+48111111111" class="footer-social-links-a">+48&#160;111&#160;111&#160;111</a>
-          </li>
-        </ul>
-      </address>
-    </footer>
-  </section>
-</body>
-
+  </body>
 </html>
