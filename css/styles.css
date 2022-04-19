@@ -7,8 +7,9 @@
   --brand-color: #2196f3;
   --main-background-color: #ffffff;
   --secondary-background-color: #2f303a;
-  --main-icon-color: #afb1b8;
+  --third-background-color: #f5f4fa;
   --fourth-background-color: #474747;
+  --main-icon-color: #afb1b8;
 }
 
 h1,
@@ -34,7 +35,6 @@ body {
   font-family: var(--main-font);
   color: var(--main-color);
   background: var(--main-background-color);
-  width: 1600px;
 }
 a {
   text-decoration: none;
@@ -103,20 +103,20 @@ a {
 }
 
 /* ----------------------------MENU STRONY--------------------------------------*/
-
+.page-size {
+  width: 1600px;
+  margin: 0 auto;
+}
 .header {
   padding: 32px 0px 32px 0px;
-  margin: 0 auto;
 }
 
 .menu-section {
-  width: 1200px;
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
 }
 
 .line {
+  margin: 0 auto;
   width: 1600px;
   left: 0px;
   border-bottom: 1px solid #ececec;
@@ -162,12 +162,26 @@ a {
   margin-right: 50px;
 }
 
+/* ====================================linia=========================================== */
+.menu-section-board::after {
+  position: relative;
+  display: block;
+  content: "";
+  height: 4px;
+  width: 53px;
+  background-color: var(--brand-color);
+  border-radius: 2px;
+  bottom: -39px;
+}
+/* linia */
+
 .menu-social-links-a {
   color: var(--secondary-color);
   text-decoration: none;
 }
 
 .menu-section-links-a {
+  position: relative;
   color: var(--main-color);
 }
 
@@ -179,17 +193,15 @@ a {
 /* ---------------------MAIN NAGŁOWEK STRONY ------------------------*/
 
 .title-section {
-  width: 1600px;
   height: 600px;
-  margin: auto;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(images/obraz_tła.jpg);
+    url(/images/obraz_tła.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  
 
   background-color: var(--secondary-background-color);
 }
@@ -239,8 +251,6 @@ a {
 /*-------------------SEKCJA   NASZE ATUTY------------------------ */
 
 .our-strengths-section {
-  width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   letter-spacing: 0.03em;
@@ -282,7 +292,6 @@ a {
 }
 
 .our-strengths-photo {
-  width: 1200px;
   height: 294px;
   justify-content: center;
   display: flex;
@@ -298,13 +307,34 @@ a {
   color: var(--secondary-color);
 }
 
+.label {
+  position: relative;
+  top: -73px;
+  left: 0px;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+
+  background: rgba(47, 48, 58, 0.727);
+}
+.label-text {
+  padding-top: 24px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 162%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--third-color);
+}
+
 /*------------------------ SEKCJA   NASZ ZESPÓŁ------------------------- */
 
 .our-team {
   justify-content: center;
-
-  margin: 0 auto;
-  background: #f5f4fa;
+  background: var(--third-background-color);
 }
 
 .our-team-title {
@@ -326,13 +356,10 @@ a {
   width: 270px;
   height: 428px;
   margin-right: 30px;
-
   border-radius: 4px;
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
   background: var(--third-color);
 }
 .our-team-profile-box:last-child {
@@ -361,7 +388,6 @@ a {
   margin: auto;
   justify-content: center;
   margin-bottom: 50px;
-
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -372,9 +398,6 @@ a {
 }
 .our-customer {
   display: flex;
-  margin: 0 auto;
-
-  width: 1200px;
 }
 
 .customer-box {
@@ -393,9 +416,6 @@ a {
 /*-------------------- FOOTER   LINKI KONTAKTOWE -----------------------------*/
 
 .footer-section {
-  width: 1600px;
-  margin: 0 auto;
-
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--secondary-background-color);
@@ -445,7 +465,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding: 12px 0 0 70px;
-  color: #ffffff;
+  color: var(--third-color);
 }
 /*------------------------------- PORTFOLIO--------------------------------- */
 
@@ -458,7 +478,7 @@ a {
   color: var(--main-color);
   margin-right: 8px;
   border-radius: 4px;
-  background: #f5f4fa;
+  background: var(--third-background-color);
   border: 0;
 }
 
@@ -467,9 +487,7 @@ a {
   color: var(--third-color);
 }
 .portfolio-section {
-  width: 1200px;
   justify-content: center;
-  margin: 0 auto;
 }
 .portfolio-filters-section {
   height: 38px;
@@ -487,24 +505,57 @@ a {
 }
 
 .portfolio-box {
+  position: relative;
   height: 404px;
   width: 370px;
-  margin: 0 auto;
+  margin-right: 30px;
   margin-bottom: 30px;
   background: var(--third-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-
   justify-content: center;
+  overflow: hidden;
 }
 .portfolio-box:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.portfolio-box-text-section {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--main-background-color);
+}
 
+.portfolio-box-overlay {
+  position: absolute;
+  width: 370px;
+  height: 300px;
+  left: 0%;
+  top: 0%;
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+
+  background: rgba(33, 150, 243, 0.9);
+  overflow: hidden;
+}
+.portfolio-box-overlay-text {
+  padding: 49px 45px 49px 24px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+
+  letter-spacing: 0.03em;
+
+  color: var(--third-color);
+}
+
+.portfolio-box:hover .portfolio-box-overlay {
+  transform: translateX(0);
+}
 .portfolio-box-title {
   font-family: var(--main-font);
-
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.06em;
@@ -519,4 +570,55 @@ a {
   color: var(--secondary-color);
   letter-spacing: 0.03em;
   padding: 2px 24px 20px 24px;
+}
+
+.active {
+  color: var(--brand-color);
+}
+
+/* ---------------------------------------BACKDROP------------------------------ */
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--main-background-color);
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #212121;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal svg {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  fill: var(--main-color);
+  top: 14px;
+  right: 10px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }

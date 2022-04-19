@@ -11,22 +11,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/modern-normalize.css" />
-    <link rel="stylesheet" href="/images/sprite.svg" />
+    <link rel="stylesheet" href="images/sprite.svg" />
   </head>
 
   <body>
     <!----------------------Menu------------------------->
-    <header class="header container">
-      <section>
-        <div class="">
+    <header class="header page-size">
+      <section class="container">
+        <div>
           <nav class="menu-section">
             <a href="index.html" class="menu-logo-webstudio"
               ><span class="logo-text">Web</span>Studio</a
             >
 
             <ul class="flex-container-menu">
-              <li>
-                <a href="index.html" class="menu-section-links-a">Agencja</a>
+              <li class="menu-section-board">
+                <a href="index.html" class="menu-section-links-a active"
+                  >Agencja</a
+                >
               </li>
               <li>
                 <a href="portfolio.html" class="menu-section-links-a"
@@ -34,7 +36,7 @@
                 >
               </li>
               <li>
-                <a href="kontakty" class="menu-section-links-a">Kontakt</a>
+                <a href="#" class="menu-section-links-a">Kontakt</a>
               </li>
             </ul>
 
@@ -44,9 +46,8 @@
                   href="mailto:info@devstudio.com"
                   class="menu-social-links-a menu-email"
                   ><svg class="contact-icon" width="16" height="12">
-                    <use href="images/sprite.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
+                    <use href="images/sprite.svg#icon-envelope"></use></svg
+                  >info@devstudio.com</a
                 >
               </li>
               <li>
@@ -64,11 +65,15 @@
     </header>
 
     <!------------------------------------------------- NAGŁÓWEK -------------------------------------------->
-    <main>
+    <main class="page-size">
       <section class="title-section">
         <div class="container">
           <h1 class="main-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="main-button main-button-text">
+          <button
+            type="button"
+            class="main-button main-button-text"
+            data-modal-open
+          >
             Zamów usługe
           </button>
         </div>
@@ -135,6 +140,9 @@
                 width="370"
                 height="294"
               />
+              <div class="label label-text">
+                <span>Aplikacje komputerowe</span>
+              </div>
             </li>
             <li class="our-strengths-photo-margin">
               <img
@@ -143,6 +151,7 @@
                 width="370"
                 height="294"
               />
+              <div class="label label-text"><span>Aplikacje mobilne</span></div>
             </li>
             <li>
               <img
@@ -151,6 +160,9 @@
                 width="370"
                 height="294"
               />
+              <div class="label label-text">
+                <span>Rozwiązania graficzne</span>
+              </div>
             </li>
           </ul>
         </div>
@@ -447,6 +459,16 @@
           </div>
         </footer>
       </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="close-btn" data-modal-close>
+            <svg width="18px" height="18px">
+              <use href="/images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
+    <script src="/js/modal.js"></script>
   </body>
 </html>
