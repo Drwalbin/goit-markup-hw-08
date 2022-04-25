@@ -102,6 +102,15 @@ a {
   fill: var(--third-color);
 }
 
+.footer-send-icon {
+  display: flex;
+  padding-left: 24px;
+}
+.modal-icon {
+  position: fixed;
+  margin: 20px 50px 20px 50px;
+}
+
 /* ----------------------------MENU STRONY--------------------------------------*/
 .page-size {
   width: 1600px;
@@ -198,7 +207,8 @@ a {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ),    url(/images/obraz-tla.jpg);
+    ),
+    url(/images/obraz-tla.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -223,6 +233,7 @@ a {
   cursor: pointer;
   color: var(--main-color);
   background-color: var(--brand-color);
+  border: none;
 }
 
 .button:hover {
@@ -238,8 +249,8 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 32px;
-  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .main-button-text {
   font-size: 16px;
@@ -460,12 +471,63 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 171%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 12px 0 0 70px;
+  padding: 0 0 0 70px;
   color: var(--third-color);
 }
+.footer-modal,
+.footer-newsletter {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-left: 71px;
+  color: var(--third-color);
+}
+.footer-modal {
+  display: flex;
+}
+.footer-modal-input {
+  color: var(--third-color);
+  height: 50px;
+  width: 358px;
+  border: 1px solid var(--secondary-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
+}
+.footer-modal-input:hover {
+  border: 1px solid var(--brand-color);
+}
+
+.footer-button {
+  display: inline-flex;
+  cursor: pointer;
+  background-color: var(--brand-color);
+  border: none;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.footer-button-text {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 188%;
+  color: var(--third-color);
+}
+
 /*------------------------------- PORTFOLIO--------------------------------- */
 
 .portfolio-button {
@@ -587,34 +649,36 @@ a {
 .modal {
   position: relative;
   top: 10%;
- margin: auto;
-transform: translate;
+  margin: auto;
+  transform: translate;
   width: 528px;
   min-height: 581px;
   background-color: var(--main-background-color);
 }
-.modal:active,
+.modal:enabled,
 .modal:hover {
-top: 10%;
+  top: 10%;
   animation-name: spin;
   animation-duration: 750ms;
- 
+
   animation-iteration-count: 1;
 }
 @keyframes spin {
   0% {
     background-color: var(--main-background-color);
-    transform: rotate(0deg);}
+    transform: rotate(0deg);
+  }
 
-  50% {background-color: var(--brand-color);
-  transform: rotate(180deg);}
+  50% {
+    background-color: var(--brand-color);
+    transform: rotate(180deg);
+  }
 
   100% {
     background-color: var(--main-background-color);
     transform: rotate(360deg);
-}}
-
-
+  }
+}
 
 .close-btn {
   position: absolute;
@@ -642,4 +706,71 @@ top: 10%;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 448px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.modal-label {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-color);
+}
+.modal-input {
+  height: 40px;
+  padding-left: 40px;
+}
+
+.modal-input,
+.modal-input-comment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.modal-input-comment {
+  height: 120px;
+  resize: none;
+}
+.modal-svg:hover,
+.modal-input:hover,
+.modal-input-comment:hover {
+  border-color: var(--brand-color);
+  fill: #2196f3;
+}
+.modal-title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-top: 40px;
+}
+.modal-rules-text {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+}
+.rules-link {
+  color: var(--brand-color);
 }
