@@ -56,6 +56,7 @@ a {
 }
 .contact-icon:hover {
   fill: var(--brand-color);
+      transition-duration: 250ms;
 }
 .main-icon {
   margin-bottom: 30px;
@@ -94,12 +95,14 @@ a {
 .customer-link:hover {
   fill: var(--brand-color);
   border-color: var(--brand-color);
+      transition-duration: 250ms;
 }
 
 .social-list-link:hover,
 .footer-social-list-link:hover {
   background-color: var(--brand-color);
   fill: var(--third-color);
+      transition-duration: 250ms;
 }
 
 .footer-send-icon {
@@ -197,6 +200,7 @@ a {
 .menu-section-links-a:hover,
 .menu-social-links-a:hover {
   color: var(--brand-color);
+      transition-duration: 250ms;
 }
 
 /* ---------------------MAIN NAGŁOWEK STRONY ------------------------*/
@@ -239,6 +243,7 @@ a {
 .button:hover {
   color: var(--third-color);
   background-color: var(--brand-color);
+      transition-duration: 250ms;
 }
 
 .main-button {
@@ -256,6 +261,7 @@ a {
   font-size: 16px;
   line-height: 188%;
   color: var(--third-color);
+  font-weight: 700;
 }
 
 /*-------------------SEKCJA   NASZE ATUTY------------------------ */
@@ -465,6 +471,7 @@ a {
 .footer-addres:hover,
 .footer-social-links-a:hover {
   color: var(--brand-color);
+      transition-duration: 250ms;
 }
 .footer-joinus-title {
   font-family: var(--main-font);
@@ -526,6 +533,7 @@ a {
   font-size: 16px;
   line-height: 188%;
   color: var(--third-color);
+  font-weight: 700;
 }
 
 /*------------------------------- PORTFOLIO--------------------------------- */
@@ -546,6 +554,7 @@ a {
 .portfolio-button:hover {
   background-color: var(--brand-color);
   color: var(--third-color);
+      transition-duration: 250ms;
 }
 .portfolio-section {
   justify-content: center;
@@ -580,6 +589,7 @@ a {
 .portfolio-box:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+        transition-duration: 250ms;
 }
 .portfolio-box-text-section {
   position: relative;
@@ -748,7 +758,8 @@ a {
 .modal-input:hover,
 .modal-input-comment:hover {
   border-color: var(--brand-color);
-  fill: #2196f3;
+  fill: var(--brand-color);
+      transition-duration: 250ms;
 }
 .modal-title {
   font-family: var(--main-font);
@@ -771,6 +782,40 @@ a {
   margin-bottom: 30px;
   color: var(--secondary-color);
 }
+.modal-rules-checkbox {
+  display: block;
+  content: "";
+} 
+
+.modal-rules-text::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #000;
+}
+.modal-rules-checkbox:checked +.modal-rules-text::before {
+  color: var(--brand-color);
+  background-color: var(--brand-color);
+  border: none;
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+ background-position: center;
+  
+}
 .rules-link {
   color: var(--brand-color);
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
