@@ -1,0 +1,33 @@
+.header {
+  padding: 32px 0px 32px 0px;
+  &__container__menu {
+    margin-right: 371px;
+    width: 254px;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    &__contact {
+      height: 16px;
+      display: flex;
+    }
+  }
+}
+
+.line {
+  margin: 0 auto;
+  width: 1600px;
+  left: 0px;
+  border-bottom: 1px solid #ececec;
+}
+
+.menu__board::after {
+  position: relative;
+  display: block;
+  content: "";
+  height: 4px;
+  width: 53px;
+  background-color: var(--brand-color);
+  border-radius: 2px;
+  bottom: -39px;
+}

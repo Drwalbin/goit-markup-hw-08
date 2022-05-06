@@ -1,0 +1,39 @@
+.page__size {
+  width: 1600px;
+  margin: 0 auto;
+}
+.section {
+  padding: 94px 0px 94px 0px;
+
+  &__menu {
+    display: flex;
+  }
+  &__title {
+    height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/obraz-tla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-color: var(--secondary-background-color);
+  }
+  &__our__strengths {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.03em;
+  }
+  &__footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--secondary-background-color);
+  }
+  &__address {
+    letter-spacing: 0.03em;
+    display: block;
+    align-content: center;
+  }
+}
