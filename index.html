@@ -22,7 +22,9 @@
     <div class="container">
       <nav class="section__menu">
         <a href="index.html" class="logo__menu__webstudio"><span class="logo--text">Web</span>Studio</a>
-
+        <svg class="mobile__menu" data-menu-open width="16" height="24">
+          <use href="images/sprite.svg#icon-menu">
+        </svg>
         <ul class="header__container__menu">
           <li class="menu__board">
             <a href="index.html" class="link__menu__section--a active">Agencja</a>
@@ -63,10 +65,10 @@
     </section>
     <!--------------------------------------Nasze Atuty------------------------------------------->
     <section class="section">
-      <div class="container">
+      <div class="container our__strengths__container">
         <ul class="section__our__strengths">
           <li class="our__strengths__box">
-            <svg class="icon__main" width="270px" height="120px">
+            <svg class="icon__main">
               <use href="images/sprite.svg#icon-satelita"></use>
             </svg>
             <h3 class="our__strengths__box--title">LOREM IPSUM</h3>
@@ -144,7 +146,11 @@
 
         <ul class="our__team__profile">
           <li class="our__team__profile__box">
-            <img src="images/img4.jpg" alt="Pracownik Product Designer" width="270" height="260" />
+            <picture>
+                <source srcset="images/img4.jpg" media="(min-width: 320px) and (max-width: 767px)" />
+            <source srcset="images/img4x1.jpg 1x " media="(min-width: 768px) and (max-width: 1199px)" />
+            <source srcset="images/img4x2.jpg 1.5x" media="(min-width: 1200px)" />
+            <img src="images/img4.jpg"/></picture>
             <h3 class="our__team__box--title">John Doe</h3>
             <p class="our__team__box--text">Product Designer</p>
             <ul class="list__social">
@@ -179,7 +185,12 @@
             </ul>
           </li>
           <li class="our__team__profile__box">
-            <img src="images/img5.jpg" alt="Pracownik Frontend Developer" width="270" height="260" />
+            <picture>
+              <source srcset="images/img5.jpg" media="(min-width: 320px) and (max-width: 767px)" />
+              <source srcset="images/img5x1.jpg 1x " media="(min-width: 768px) and (max-width: 1199px)" />
+              <source srcset="images/img5x2.jpg 3x" media="(min-width: 1200px)" />
+              <img src="images/img5.jpg" />
+            </picture>
             <h3 class="our__team__box--title">John Doe</h3>
             <p class="our__team__box--text">Frontend Developer</p>
             <ul class="list__social">
@@ -214,7 +225,12 @@
             </ul>
           </li>
           <li class="our__team__profile__box">
-            <img src="images/img6.jpg" alt="Pracownik Marketing" width="270" height="260" />
+                <picture>
+                  <source srcset="images/img6.jpg" media="(min-width: 320px) and (max-width: 767px)" />
+                  <source srcset="images/img6x1.jpg 1x " media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="images/img6x2.jpg 3x" media="(min-width: 1200px)" />
+                  <img src="images/img6.jpg" />
+                </picture>
             <h3 class="our__team__box--title">John Doe</h3>
             <p class="our__team__box--text">Marketing</p>
             <ul class="list__social">
@@ -249,7 +265,12 @@
             </ul>
           </li>
           <li class="our__team__profile__box">
-            <img src="images/img7.jpg" alt="Pracownik UI Designer" width="270" height="260" />
+                <picture>
+                  <source srcset="images/img7.jpg" media="(min-width: 320px) and (max-width: 767px)" />
+                  <source srcset="images/img7x1.jpg 1x " media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="images/img7x2.jpg 3x" media="(min-width: 1200px)" />
+                  <img src="images/img7.jpg" />
+                </picture>
             <h3 class="our__team__box--title">John Doe</h3>
             <p class="our__team__box--text">UI Designer</p>
             <ul class="list__social">
@@ -345,7 +366,7 @@
               <a href="index.html" class="logo__footer__webstudio"><span class="logo--text">Web</span>Studio</a>
               <ul class="section__address">
                 <li>
-                  <a href="m.Warszawa,AlejeJerozolimskie21" class="footer__addres">m. Warszawa, Aleje Jerozolimskie
+                  <a href="m.Warszawa,AlejeJerozolimskie21" class="footer__address">m. Warszawa, Aleje Jerozolimskie
                     21</a>
                 </li>
                 <li>
@@ -456,6 +477,30 @@
     </div>
   </main>
   <script src="js/modal.js"></script>
+
+  <div class="mobile-menu is__hidden" data-menu>
+    <svg class="close-btn mobile-menu__close-btn" data-menu-close>
+      <use href="images\icons.svg#icon-closebutton"></use>
+    </svg>
+    <ul class="list mobile-menu__nav-list">
+      <li class="mobile-menu__nav-item"><a href="index.html" class="mobile-menu__nav-link">Agencja</a></li>
+      <li class="mobile-menu__nav-item"><a href="portfolio.html" class="mobile-menu__nav-link">Portfolio</a></li>
+      <li class="mobile-menu__nav-item"><a href="#" class="mobile-menu__nav-link">Kontakt</a></li>
+    </ul>
+    <ul class="list mobile-menu__contact-list">
+      <li class="mobile-menu__contact-item"><a href="tel:48111111111" class="mobile-menu__phone">+48 111 111 111</a></li>
+      <li class="mobile-menu__contact-item"><a href="mailto:info@devstudio.com"
+          class="mobile-menu__mail">info@devstudio.com</a></li>
+    </ul>
+    <ul class="list mobile-menu__social-list">
+      <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-link">Instagram</a></li>
+      <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-link">Twitter</a></li>
+      <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-link">Facebook</a></li>
+      <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-link">LinkedIn</a></li>
+    </ul>
+  </div>
+  
+  <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>

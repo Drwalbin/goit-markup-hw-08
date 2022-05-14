@@ -1,3 +1,16 @@
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .icon__main {
+    width: 450px;
+    height: 110px;
+    background-color: var(--third-background-color);
+    border-radius: 4px;
+  }
+}
+
+// @media screen and (min-width: 768px) and (max-width:1200px) {}
+
+@media screen and (min-width: 1200px) {
+
 .icon {
   &__modal {
     position: fixed;
@@ -23,4 +36,5 @@
       padding-left: 24px;
     }
   }
+}
 }
