@@ -1,40 +1,86 @@
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .icon__contact {
+          margin-right: 10px;
+          fill: var(--secondary-color);
+      
+          & :hover {
+            fill: var(--brand-color);
+            transition-duration: 250ms;
+          }
+        }
+  }
   .icon__main {
     width: 450px;
     height: 110px;
     background-color: var(--third-background-color);
     border-radius: 4px;
   }
-}
+  .icon__footer {
+    justify-content: center;
+  
 
-// @media screen and (min-width: 768px) and (max-width:1200px) {}
+  &__send {
+    display: flex;
+    padding-left: 24px;
+  }}
+
+
+@media screen and (min-width: 768px) and (max-width:1200px) {
+    .icon__contact {
+        margin-right: 10px;
+        fill: var(--secondary-color);
+    
+        & :hover {
+          fill: var(--brand-color);
+          transition-duration: 250ms;
+        }
+      }
+    .icon__main {
+        width: 354px;
+        height: 110px;
+        background-color: var(--third-background-color);
+        border-radius: 4px;
+      }
+    
+      .icon__footer {
+        justify-content: center;
+    
+    
+        &__send {
+          display: flex;
+          padding-left: 24px;
+        }
+      }
+    }
+
+
 
 @media screen and (min-width: 1200px) {
+  .icon {
+    &__modal {
+      position: fixed;
+      margin: 20px 50px 20px 50px;
+    }
+    &__contact {
+      margin-right: 10px;
+      fill: var(--secondary-color);
+      & :hover {
+        fill: var(--brand-color);
+        transition-duration: 250ms;
+      }
+    }
 
-.icon {
-  &__modal {
-    position: fixed;
-    margin: 20px 50px 20px 50px;
-  }
-  &__contact {
-    margin-right: 10px;
-    fill: var(--secondary-color);
-    & :hover {
-      fill: var(--brand-color);
-      transition-duration: 250ms;
+    &__main {
+      width:270px;
+      margin-bottom: 30px;
+    }
+
+    &__footer {
+      margin-left: 72px;
+      &__send {
+        display: flex;
+        padding-left: 24px;
+      }
     }
   }
-
-  &__main {
-    margin-bottom: 30px;
-  }
-
-  &__footer {
-    margin-left: 72px;
-    &__send {
-      display: flex;
-      padding-left: 24px;
-    }
-  }
-}
 }
