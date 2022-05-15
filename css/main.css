@@ -65,7 +65,7 @@ a {
   .section__title {
     height: 400px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(/images/obraz-tla.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(images/obraz-tla.jpg);
     background-size: 480px 400px;
     background-repeat: no-repeat;
     background-color: var(--secondary-background-color);
@@ -96,7 +96,7 @@ a {
   .section__title {
     height: 600px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/obraz-tla1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(images/obraz-tla1x.jpg);
     background-size: 1200px 600px;
     background-repeat: no-repeat;
     background-color: var(--secondary-background-color);
@@ -130,7 +130,7 @@ a {
   .section__title {
     height: 600px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/obraz-tla2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(images/obraz-tla2x.jpg);
     background-size: 1600px 600px;
     background-repeat: no-repeat;
     background-color: var(--secondary-background-color);
@@ -160,7 +160,7 @@ a {
 .section__title {
   height: 600px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/obraz-tla2x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(images/obraz-tla2x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--secondary-background-color);
