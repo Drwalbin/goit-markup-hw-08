@@ -15,12 +15,14 @@
 
 <body>
   <!----------------------Menu------------------------->
-  <header class="header page__size">
+  <header class="header page__size line">
   
     <div class="container">
       <nav class="section__menu">
         <a href="index.html" class="logo__menu__webstudio"><span class="logo--text">Web</span>Studio</a>
-  
+  <svg class="mobile__menu" data-menu-open width="16" height="24">
+    <use href="images/sprite.svg#icon-menu">
+  </svg>
         <ul class="header__container__menu">
           <li>
             <a href="index.html" class="link__menu__section--a">Agencja</a>
@@ -206,78 +208,78 @@
     </div>
 
 
-   <footer class="section__footer">
-      <div class="container">
-        <ul class="container__footer">
-          <li>
-            <address>
-              <a href="index.html" class="logo__footer__webstudio"><span class="logo--text">Web</span>Studio</a>
-              <ul class="section__address">
-                <li>
-                  <a href="m.Warszawa,AlejeJerozolimskie21" class="footer__addres">m. Warszawa, Aleje Jerozolimskie
-                    21</a>
-                </li>
-                <li>
-                  <a href="mailto:info@example.com" class="link__footer__social--a">info@example.com</a>
-                </li>
-                <li>
-                  <a href="tel:+48111111111" class="link__footer__social--a">+48&#160 111&#160 111&#160 111</a>
-                </li>
-              </ul>
-            </address>
-          </li>
-          <li>
-            <p class="footer__joinus__title">DOŁĄCZ DO NAS</p>
-            <ul class="icon__footer list__social">
+  <footer class="section__footer">
+    <div class="container footer__column">
+      <ul class="container__footer">
+        <li>
+          <address>
+            <a href="index.html" class="logo__footer__webstudio"><span class="logo--text">Web</span>Studio</a>
+            <ul class="section__address">
               <li>
-                <a class="list__social__footer__link" href="">
-                  <svg width="20px" height="20px">
-                    <use href="images/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
+                <a href="m.Warszawa,AlejeJerozolimskie21" class="footer__address">m. Warszawa, Aleje Jerozolimskie
+                  21</a>
               </li>
               <li>
-                <a class="list__social__footer__link" href="">
-                  <svg width="20px" height="20px">
-                    <use href="images/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
+                <a href="mailto:info@example.com" class="link__footer__social--a">info@example.com</a>
               </li>
               <li>
-                <a class="list__social__footer__link" href="">
-                  <svg width="20px" height="20px">
-                    <use href="images/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="list__social__footer__link" href="">
-                  <svg width="20px" height="20px">
-                    <use href="images/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
+                <a href="tel:+48111111111" class="link__footer__social--a">+48&#160 111&#160 111&#160 111</a>
               </li>
             </ul>
-          </li>
-          <li>
-            <p class="footer__newsletter">Zapisz się do newslettera</p>
-            <ul>
-              <li class="footer__modal">
-                <form>
-                  <label>
-                    <input class="footer__modal__input" type="email" name="email" placeholder=" E-mail" />
-                    <button class="footer__button footer__button__text" type="submit">ZAPISZ SIĘ<span
-                        class="icon__footer__send"><svg height="24px" width="24px">
-                          <use href="images/sprite.svg#icon-icon-send"></use>
-                        </svg></span></button>
-                  </label>
-                </form>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </footer>
+          </address>
+        </li>
+        <li>
+          <p class="footer__joinus__title">DOŁĄCZ DO NAS</p>
+          <ul class="icon__footer list__social">
+            <li>
+              <a class="list__social__footer__link" href="">
+                <svg width="20px" height="20px">
+                  <use href="images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="list__social__footer__link" href="">
+                <svg width="20px" height="20px">
+                  <use href="images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="list__social__footer__link" href="">
+                <svg width="20px" height="20px">
+                  <use href="images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="list__social__footer__link" href="">
+                <svg width="20px" height="20px">
+                  <use href="images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="footer__newsletter">Zapisz się do newslettera</p>
+          <ul>
+            <li class="footer__modal">
+              <form>
+                <label>
+                  <input class="footer__modal__input" type="email" name="email" placeholder=" E-mail" />
+                  <button class="footer__button footer__button__text" type="submit">ZAPISZ SIĘ<span
+                      class="icon__footer__send"><svg height="24px" width="24px">
+                        <use href="images/sprite.svg#icon-icon-send"></use>
+                      </svg></span></button>
+                </label>
+              </form>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
   </main>
 </body>
 

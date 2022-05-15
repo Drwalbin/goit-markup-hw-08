@@ -1,61 +1,57 @@
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .icon__contact {
-          margin-right: 10px;
-          fill: var(--secondary-color);
-      
-          & :hover {
-            fill: var(--brand-color);
-            transition-duration: 250ms;
-          }
-        }
+    margin-right: 10px;
+    fill: var(--secondary-color);
+
+    & :hover {
+      fill: var(--brand-color);
+      transition-duration: 250ms;
+    }
   }
-  .icon__main {
-    width: 450px;
-    height: 110px;
-    background-color: var(--third-background-color);
-    border-radius: 4px;
-  }
-  .icon__footer {
-    justify-content: center;
-  
+}
+.icon__main {
+  width: 450px;
+  height: 110px;
+  background-color: var(--third-background-color);
+  border-radius: 4px;
+}
+.icon__footer {
+  justify-content: center;
 
   &__send {
     display: flex;
     padding-left: 24px;
-  }}
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .icon__contact {
+    margin-right: 10px;
+    fill: var(--secondary-color);
 
-@media screen and (min-width: 768px) and (max-width:1200px) {
-    .icon__contact {
-        margin-right: 10px;
-        fill: var(--secondary-color);
-    
-        & :hover {
-          fill: var(--brand-color);
-          transition-duration: 250ms;
-        }
-      }
-    .icon__main {
-        width: 354px;
-        height: 110px;
-        background-color: var(--third-background-color);
-        border-radius: 4px;
-      }
-    
-      .icon__footer {
-        justify-content: center;
-    
-    
-        &__send {
-          display: flex;
-          padding-left: 24px;
-        }
-      }
+    & :hover {
+      fill: var(--brand-color);
+      transition-duration: 250ms;
     }
+  }
+  .icon__main {
+    width: 354px;
+    height: 110px;
+    background-color: var(--third-background-color);
+    border-radius: 4px;
+  }
 
+  .icon__footer {
+    justify-content: center;
 
+    &__send {
+      display: flex;
+      padding-left: 24px;
+    }
+  }
+}
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .icon {
     &__modal {
       position: fixed;
@@ -71,7 +67,7 @@
     }
 
     &__main {
-      width:270px;
+      width: 270px;
       margin-bottom: 30px;
     }
 

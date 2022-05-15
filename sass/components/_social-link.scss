@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .link__footer__social--a {
     font-size: 14px;
     line-height: 171%;
@@ -114,7 +114,7 @@
     fill: var(--main-icon-color);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .link__footer__social--a {
     font-size: 14px;
     line-height: 171%;
