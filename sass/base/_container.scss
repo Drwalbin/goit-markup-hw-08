@@ -7,7 +7,6 @@
   .our__strengths__container {
     padding-top: 60px;
   }
-  
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -21,13 +20,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
     column-count: 2;
-    margin:0 auto;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .container {
-  max-width: 1600px;
+    max-width: 1600px;
     padding: 0px 200px;
     margin: 0 auto;
   }
@@ -35,11 +34,22 @@
     padding-top: 94px;
     padding-bottom: 60px;
     column-count: 4;
-   
   }
-
 }
 
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+    padding: 0px 200px;
+    margin: 0 auto;
+  }
+
+  .our__strengths__container {
+    padding-top: 94px;
+    padding-bottom: 60px;
+    column-count: 4;
+  }
+}
 // @media screen and (min-width: 480px) and (max-width: 768px) {}
 
 // @media screen and (min-width: 768px) and (max-width:1200px) {}
