@@ -147,10 +147,11 @@
         <ul class="our__team__profile">
           <li class="our__team__profile__box">
             <picture>
-                <source srcset="images/img4.jpg" media="(min-width: 320px) and (max-width: 767px)" />
-            <source srcset="images/img4x1.jpg 1x " media="(min-width: 768px) and (max-width: 1199px)" />
-            <source srcset="images/img4x2.jpg 1.5x" media="(min-width: 1200px)" />
-            <img src="images/img4.jpg"/></picture>
+              <source srcset="images/img4.jpg 2x" media="(min-width: 320px) and (max-width: 767px)" />
+              <source srcset="images/img4x1.jpg 1x " media="(min-width: 768px) and (max-width: 1199px)" />
+              <source srcset="images/img4x2.jpg 1.5x" media="(min-width: 1200px)" />
+              <img width="100%" max-width="450px" src="images/img4.jpg" />
+            </picture>
             <h3 class="our__team__box--title">John Doe</h3>
             <p class="our__team__box--text">Product Designer</p>
             <ul class="list__social">
@@ -186,10 +187,10 @@
           </li>
           <li class="our__team__profile__box">
             <picture>
-              <source srcset="images/img5.jpg" media="(min-width: 320px) and (max-width: 767px)" />
+              <source srcset="images/img5.jpg 2x" media="(min-width: 320px) and (max-width: 767px)" />
               <source srcset="images/img5x1.jpg 1x " media="(min-width: 768px) and (max-width: 1199px)" />
               <source srcset="images/img5x2.jpg 3x" media="(min-width: 1200px)" />
-              <img src="images/img5.jpg" />
+              <img width="100%" max-width="450px" src="images/img5.jpg" />
             </picture>
             <h3 class="our__team__box--title">John Doe</h3>
             <p class="our__team__box--text">Frontend Developer</p>
@@ -225,12 +226,12 @@
             </ul>
           </li>
           <li class="our__team__profile__box">
-                <picture>
-                  <source srcset="images/img6.jpg" media="(min-width: 320px) and (max-width: 767px)" />
-                  <source srcset="images/img6x1.jpg 1x " media="(min-width: 768px) and (max-width: 1199px)" />
-                  <source srcset="images/img6x2.jpg 3x" media="(min-width: 1200px)" />
-                  <img src="images/img6.jpg" />
-                </picture>
+            <picture>
+              <source srcset="images/img6.jpg 2x" media="(min-width: 320px) and (max-width: 767px)" />
+              <source srcset="images/img6x1.jpg 1x " media="(min-width: 768px) and (max-width: 1199px)" />
+              <source srcset="images/img6x2.jpg 3x" media="(min-width: 1200px)" />
+              <img width="100%" max-width="450px" src="images/img6.jpg" />
+            </picture>
             <h3 class="our__team__box--title">John Doe</h3>
             <p class="our__team__box--text">Marketing</p>
             <ul class="list__social">
@@ -265,12 +266,12 @@
             </ul>
           </li>
           <li class="our__team__profile__box">
-                <picture>
-                  <source srcset="images/img7.jpg" media="(min-width: 320px) and (max-width: 767px)" />
-                  <source srcset="images/img7x1.jpg 1x " media="(min-width: 768px) and (max-width: 1199px)" />
-                  <source srcset="images/img7x2.jpg 3x" media="(min-width: 1200px)" />
-                  <img src="images/img7.jpg" />
-                </picture>
+            <picture>
+              <source srcset="images/img7.jpg 2x" media="(min-width: 320px) and (max-width: 767px)" />
+              <source srcset="images/img7x1.jpg 1x " media="(min-width: 768px) and (max-width: 1199px)" />
+              <source srcset="images/img7x2.jpg 3x" media="(min-width: 1200px)" />
+              <img width="100%" max-width="450px" src="images/img7.jpg" />
+            </picture>
             <h3 class="our__team__box--title">John Doe</h3>
             <p class="our__team__box--text">UI Designer</p>
             <ul class="list__social">
@@ -359,9 +360,9 @@
     </section>
     <!---------------------------------------- FOOTER ----------------------------------------->
     <footer class="section__footer">
-      <div class="container footer__column">
-        <ul class="container__footer">
-          <li>
+      <div class="container">
+       <div class="footer__column">
+        <ul class="footer__box1">
             <address>
               <a href="index.html" class="logo__footer__webstudio"><span class="logo--text">Web</span>Studio</a>
               <ul class="section__address">
@@ -377,8 +378,8 @@
                 </li>
               </ul>
             </address>
-          </li>
-          <li>
+          </ul>
+          <ul class="footer__box2">
             <p class="footer__joinus__title">DOŁĄCZ DO NAS</p>
             <ul class="icon__footer list__social">
               <li>
@@ -410,7 +411,9 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </ul>
+        </div>
+        <ul class="footer__box3">
           <li>
             <p class="footer__newsletter">Zapisz się do newslettera</p>
             <ul>
@@ -499,7 +502,7 @@
       <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-link">LinkedIn</a></li>
     </ul>
   </div>
-  
+
   <script src="js/mobile-menu.js"></script>
 </body>
 

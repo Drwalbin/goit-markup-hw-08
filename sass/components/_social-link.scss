@@ -1,4 +1,8 @@
 @media screen and (min-width: 320px) and (max-width: 768px) {
+    .link__customer {
+        background-color: var(--main-background-color);
+        fill: var(--main-icon-color);
+      }
   .link__footer__social--a {
     font-size: 14px;
     line-height: 171%;
@@ -78,7 +82,7 @@
 }
 
 // @media screen and (min-width: 1200px) {}
-
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
 .link {
   &__menu {
     &__section--a,
@@ -114,7 +118,7 @@
     fill: var(--main-icon-color);
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
   .link__footer__social--a {
     font-size: 14px;
     line-height: 171%;
@@ -151,6 +155,66 @@
 //   &:hover {
 //     color: var(--brand-color);
 //     transition-duration: 250ms;
+//   }
+// }
+
+// .link__footer__social--a {
+//   font-size: 14px;
+//   line-height: 171%;
+//   font-style: normal;
+//   color: var(--secondary-color);
+//   transition-duration: 250ms;
+
+//   &:hover {
+//     color: var(--brand-color);
+//     transition-duration: 250ms;
+//   }
+// }
+// --------------------------------------------------------------------------------------
+
+// .link {
+//   &__menu {
+
+//     &__section--a,
+//     &__social--a {
+//       font-size: 14px;
+//       font-weight: 500;
+//       line-height: 146%;
+//     }
+
+//     &__social--a {
+//       color: var(--secondary-color);
+//       text-decoration: none;
+
+//       &:hover {
+//         color: var(--brand-color);
+//         transition-duration: 250ms;
+//       }
+//     }
+
+//     &__section--a {
+//       position: relative;
+//       color: var(--main-color);
+
+//       &:hover {
+//         color: var(--brand-color);
+//         transition-duration: 250ms;
+//       }
+//     }
+
+//     &__email {
+//       margin-right: 50px;
+
+//       &:hover {
+//         color: var(--brand-color);
+//         transition-duration: 250ms;
+//       }
+//     }
+//   }
+
+//   &__customer {
+//     background-color: var(--main-background-color);
+//     fill: var(--main-icon-color);
 //   }
 // }
 

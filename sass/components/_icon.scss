@@ -10,7 +10,8 @@
   }
 }
 .icon__main {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 110px;
   background-color: var(--third-background-color);
   border-radius: 4px;
@@ -80,3 +81,33 @@
     }
   }
 }
+// ----------------------------------------------------------------------------
+// .icon {
+//   &__modal {
+//     position: fixed;
+//     margin: 20px 50px 20px 50px;
+//   }
+
+//   &__contact {
+//     margin-right: 10px;
+//     fill: var(--secondary-color);
+
+//     & :hover {
+//       fill: var(--brand-color);
+//       transition-duration: 250ms;
+//     }
+//   }
+
+//   &__main {
+//     margin-bottom: 30px;
+//   }
+
+//   &__footer {
+//     margin-left: 72px;
+
+//     &__send {
+//       display: flex;
+//       padding-left: 24px;
+//     }
+//   }
+// }

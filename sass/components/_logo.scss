@@ -16,6 +16,7 @@
     font-style: normal;
     font-size: 26px;
     line-height: 191%;
+
   }
   .logo--text {
     color: var(--brand-color);
@@ -71,3 +72,30 @@
     }
   }
 }
+// -------------------------------------------------------------------
+
+// .logo {
+//   &__menu__webstudio {
+//     width: 145px;
+//     height: 31px;
+//     margin-right: 93px;
+//     font-family: var(--secondary-font);
+//     font-style: normal;
+//     font-size: 26px;
+//     line-height: 75%;
+//     color: var(--main-color);
+//     display: flex;
+//   }
+
+//   &__footer__webstudio {
+//     color: var(--third-color);
+//     font-family: var(--secondary-font);
+//     font-style: normal;
+//     font-size: 26px;
+//     line-height: 191%;
+//   }
+
+//   &--text {
+//     color: var(--brand-color);
+//   }
+// }

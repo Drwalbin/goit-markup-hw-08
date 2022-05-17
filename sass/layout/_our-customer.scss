@@ -1,7 +1,10 @@
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .our__customer {
-    display: inline-block;
+    max-width: 480px;
+    margin: 0 auto;
+    display: block;
     column-count: 2;
+    text-align: -webkit-center;
     &__title {
       display: flex;
 
@@ -21,7 +24,8 @@
     &__box {
       margin-bottom: 30px;
       padding: 16px 32px 16px 32px;
-      width: 210px;
+      width: 100%;
+      max-width: 210px;
       height: 92px;
       border: 1px solid #afb1b8;
       box-sizing: border-box;
@@ -50,8 +54,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .our__customer {
-    display: inline-block;
+    max-width: 768px;
+    margin: auto;
+    display: block;
     column-count: 3;
+    text-align: -webkit-center;
     &__title {
       display: flex;
       margin: auto;
@@ -181,6 +188,51 @@
 //     }
 //   }
 // }
+// .link__customer:hover {
+//   fill: var(--brand-color);
+//   border-color: var(--brand-color);
+//   transition-duration: 250ms;
+// }
+// -------------------------------------------------------------------------------
+// .our__customer {
+//   display: flex;
+
+//   &__title {
+//     display: flex;
+//     margin: auto;
+//     justify-content: center;
+//     margin-bottom: 50px;
+//     font-family: var(--main-font);
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 121%;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//   }
+
+//   &__box {
+//     margin-right: 30px;
+//     padding: 16px 32px 16px 32px;
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid #afb1b8;
+//     box-sizing: border-box;
+//     border-radius: 4px;
+//     justify-content: center;
+
+//     &:hover {
+//       fill: var(--brand-color);
+//       border-color: var(--brand-color);
+//       transition-duration: 250ms;
+//     }
+
+//     &:last-child {
+//       margin-right: 0;
+//     }
+//   }
+// }
+
 // .link__customer:hover {
 //   fill: var(--brand-color);
 //   border-color: var(--brand-color);
